@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third</title>
+    <style>
+        html,body{
+           width: 100%;
+           height: 100%;
+           padding:0px;
+           margin:0px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           background-color:rgb(219, 215, 215);
+        }
+        main{
+            width: 90%;
+            height: 90%;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+          
+        }
+  section{
+   
+    height: 85%;
+   width: 27%;
+   border-radius: 10%;
+   /* border:1px solid black; */
+   padding:2%;
+background-color: white;
+   position: relative;
+text-align: center;}
+h5{
+    color:gray
+}
+div{
+    background-color:blue;
+}
+div>p{
+    color: white;
+}
+@media(min-width:800px) and (max-width:1500px)
+{
+    h5{
+    width:84%;
+    text-align: center;
+    /* border: 1px solid black; */
+    display: inline-block;
+    font-size: 100%;
+}
+h1{
+    font-size: 200%;
+}
+section>p{
+    border-bottom:2px solid blue;
+    margin-left: 9%;
+    width: 80%;
+   
+}
+div{
+    height: 10%;
+    width:42%;
+    border:1px solid black;
+    border-radius:40%;
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform: translate(-50%,-50%);}
+    div>p{
+        font-size:100%;
+    }
+    img{
+       width: 36%;
+       height: 24%;
+    }
+}
+@media(min-width:300px) and (max-width:799px)
+{
+    h5{
+    width:70%;
+    text-align: center;
+    /* border: 1px solid black; */
+    display: inline-block;
+    font-size: 70%;
+}
+h1{
+    font-size: 100%;
+}
+section>p{
+    border-bottom:2px solid blue;
+    margin-left: 18%;
+    width: 60%;
+   
+}
+div{
+    height: 20%;
+    width:40%;
+    border:1px solid black;
+    border-radius:20%;
+    position:absolute;
+    top:85%;
+    left:50%;
+    transform: translate(-50%,-50%);
+display: flex;
+align-items: center;
+justify-content: center;}
+    div>p{
+        font-size:40%;
+    }
+    img{
+        width: 20%;
+        height: 10%;
+    }
+}
+@media(max-height:300px)
+{
+section{
+    overflow-y: scroll;
+}
+}
+section:hover{
+    background-color:aliceblue;
+    transform: scale(1.1);
+ 
+}
+div:hover{
+    background-color: gainsboro;
+}
+
+    </style>
+</head>
+<body>
+        <main>
+            <section>
+                <img src="assets/images/task31.png" />
+              <h1>Visualize it</h1>
+              <h5>Sample text.Click to select the text box. Click again or double click to start editing the text.</h5>
+            <p></p>
+            <div>
+                <p>read more</p>
+            </div>
+            </section>
+            <section>
+                <img src="assets/images/task32.png" />
+                <h1>Create it</h1>
+                <h5>Sample text.Click to select the text box. Click again or double click to start editing the text.</h5>
+              <p></p>
+              <div>
+                  <p>read more</p>
+              </div>
+            </section>
+            <section>
+                <img src="assets/images/task33.png" />
+                <h1>Grow it</h1>
+                <h5>Sample text.Click to select the text box. Click again or double click to start editing the text.</h5>
+              <p></p>
+              <div>
+                  <p>read more</p>
+              </div> </section>
+        </main>
+    
+</body>
+</html>
