@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple2</title>
+    <style>
+       html,body{
+            margin:0px;
+            padding:0px;
+          height: 100%;
+          width:100%;
+          display: flex;
+        
+           
+        }
+        main{
+            width:100%;
+            height:60%;
+            border:1px solid black;
+            margin: 0 auto;
+           align-self: center;
+           display: flex;
+        }
+#our-features{
+    border:2px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+#container{
+width: 90%;
+height: 85%;
+
+}
+.row{
+    /* border: 3px solid black; */
+    height: 100%;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+.col-4{
+    border:1px solid black;
+    width:calc(100%/14*4);
+    height: 100%;
+    border-top-left-radius:8%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom-right-radius:8%;
+    background-color: white;
+    overflow: hidden;
+}
+.card-header{
+    text-align: center;
+    box-sizing: border-box;
+    padding:5%;
+}
+.card-info
+{
+    box-sizing:border-box;
+    padding:10%;
+    text-align: center;
+
+}
+.back-image{
+    background-image: url("/assets/images/man.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.color{
+    color:white;
+}
+[class="col-4"]:hover{
+    background-color:cornflowerblue;
+    transform: scale(1.1);
+}
+.back-image:hover{
+    transform: scale(1.1);
+}
+@media(max-width:500px) and (min-width:300px)
+{
+    h2{
+        font-size: 80%;
+    }
+}
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+<section id="our-features">
+    <div id="container">
+        <div class="row">
+            <div class="col-4">
+<div class="card-header">
+    <img src="/assets/images/clock.jpeg" alt="GROWTH" width="15%" height="10%"/>
+ <h2>GROWTH</h2>
+</div>
+<div class="card-info">
+    <p>
+       Our group of specialists will collabrate with you to develop a personalized strategy aimed at guiding you toward success through incremental progress 
+    </p>
+</div>
+            </div>
+            <div class="col-4 back-image">
+           <div class="card-header">
+            <img src="/assets/images/fitness2.png" alt="FITNESS" width="15%" height="10%"/>
+            <h2 class="color">FITNESS</h2>
+           </div>
+           <div class="card-info">
+            <p class="color">
+                Offering a diverse range of exercises for your section,you'll have all the resources necessary to attain the pack of your physical fitness.
+            </p>
+           </div>
+            </div>
+            <div class="col-4">
+                <div class="card-header">
+                    <img src="/assets/images/diet2.png" alt="DIET" width="15%" height="10%"/>
+                    <h2>DIET</h2>
+                   
+                </div>
+                <div class="card-info">
+                    <p>
+                        Our team will collobrate with a tailor-made meal plan designing tonyou in achieving your distinct objetives. 
+                    </p>
+                </div>
+                 </div>
+        </div>
+
+    </div>
+</section>
+    </main>
+    <footer></footer>
+</body>
+</html>
