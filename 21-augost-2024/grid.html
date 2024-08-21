@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+  body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  body{
+display:flex;
+justify-content: center;
+align-items: center;
+  }
+  *{
+    box-sizing: border-box;
+/* overflow-y: scroll; */
+  }
+  main{
+    height: 99%;
+    width: 99%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  }
+ 
+  #container>div{
+  background-color:rgb(247, 242, 242);
+    display: grid;
+    grid-template-columns:fr;
+    grid-template-rows: 50% 30% 20%;
+    transition: all 0.5s;
+  }
+  #container>div:hover{
+    background-color: blanchedalmond;
+    transform: scale(1.1);
+  }
+  /* .card-header{
+    border:1px solid black;
+  } */
+  .card-info{
+ 
+    box-sizing: border-box;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+  
+  }
+  .card-action{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  img{
+    height: 100%;
+    width:100%;
+  }
+  p{
+    font-weight: bold;
+    height: 100%;
+    font-size: 1rem;
+    display: flex;
+    padding: 2%;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  span{
+    color: gray;
+  }
+.card-action>span{
+    color:blue;
+}
+
+.card-action>div{
+    width:125px;
+    display: flex;
+    justify-content: space-around;
+}
+  @media(min-width:720px) and (max-width:1500px)
+  {
+#container{
+    display: grid;
+grid-template-columns:calc(92%/3) calc(92%/3) calc(92%/3);
+grid-template-rows: 48% 48%;
+gap:4%;
+height:80%;
+width: 80%;
+}
+p{
+  font-size: 0.7rem;
+}
+  }
+  @media(min-width:450px) and (max-width:719px)
+  {
+ #container{
+    display: grid;
+    gap:4%;
+    height:90%;
+width: 90%;
+    grid-template-columns:48% 48%;
+    grid-template-rows:calc(91%/3) calc(91%/3) calc(91%/3);
+ }
+ p{
+    font-size: 0.8rem;
+ }
+  }
+  @media(min-width:300px) and (max-width:449px)
+  {
+    #container{
+  height:90%;
+width: 95%;
+    display: grid;
+    gap:4%;
+    grid-template-columns:80%;
+    grid-template-rows:calc(80%/3) calc(80%/3) calc(80%/3) calc(80%/3) calc(80%/3) calc(80%/3);
+  
+ }
+
+ p{
+    font-size: 0.6rem;
+ }
+  }
+  
+    </style>
+</head>
+<body>
+ <!-- <header></header> -->
+ <main>
+    <section id="container">
+<div>
+<div class="card-header">
+    <img src="/assets/images/robbery.jpg" alt="robbery"/>
+</div>
+<div class="card-info">
+    <p>Naxçıvanda oğurluq edən şəxs saxlanıldı</p>
+</div>
+<div class="card-action">
+    <span>kriminal</span>
+    <div>
+    <span>👍🏻22</span>
+    <span>👎🏻123</span>
+</div>
+</div>
+</div>
+
+<div>
+    <div class="card-header">
+        <img src="assets/images/footballler.jpeg" alt="footballer"/>
+    </div>
+    <div class="card-info">
+        <p>Belçikalı ulduz De Bruyne İngiltere Premyer liqasinin en yaxsi yarimmudafiecisi secildi </p>
+    </div>
+    <div class="card-action">
+        
+        <span>idman</span>
+        <div>
+        <span>👍🏻201</span>
+        <span>👎🏻34</span>
+        </div>
+    </div> 
+</div>
+
+<div>
+    <div class="card-header">
+        <img src="/assets/images/water.jpg" alt="water from tap"/>
+    </div>
+    <div class="card-info">
+        <p>Paytact sakinlerinin SU SINAGI:Kimdir gunahkar?-Resmi aciqlama</p>
+    </div>
+    <div class="card-action">
+        <span>cemiyyet</span>
+        <div>
+        <span>👍🏻43</span>
+        <span>👎🏻123</span>
+    </div>
+    </div>   
+</div>
+
+<div>
+    <div class="card-header">
+        <img src="/assets/images/AAFA.jpg" alt="Turan Tovuz stadion"/>
+    </div>
+    <div class="card-info">
+        <p>AFFA Turan Tovuzun stadionunda ot ortuyunun deyisdirlmesi ile bagli tapsiriq verib</p>
+    </div>
+    <div class="card-action">
+
+        <span>idman</span>
+        <div>
+        <span>👍🏻320</span>
+        <span>👎🏻21</span>
+    </div>
+    </div>   
+</div>
+
+<div>
+    <div class="card-header">
+        <img src="/assets/images/Hospital.jpeg" alt="Hospital"/>
+    </div>
+    <div class="card-info">
+        <p>Bakida eri terefinden terk edilen qadin iki gun sonra oldu</p>
+    </div>
+    <div class="card-action">
+        <span>krimina</span>
+        <div>
+        <span>👍🏻32</span>
+        <span>👎🏻146</span>
+    </div>
+    </div>   
+</div>
+
+<div>
+    <div class="card-header">
+        <img src="/assets/images/earthquick.jpeg" a;t="earthquick"/>
+    </div>
+<div class="card-info">
+    <p>Iranda zelzele olub</p>
+</div>
+<div class="card-action">
+    <span>dunya</span>
+    <div>
+    <span>👍🏻21</span>
+    <span>👎🏻234</span>
+</div>
+</div>
+</div>
+    </section>
+ </main>
+ <footer></footer>
+</body>
+</html>
