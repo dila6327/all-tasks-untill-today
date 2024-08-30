@@ -1,0 +1,386 @@
+header {
+  width: 100%;
+  height: 5%;
+}
+header .header-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-container .logo, header .header-container .navbar, header .header-container .icons-and-phone {
+  height: 100%;
+}
+header .header-container .logo {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .header-container .logo img {
+  height: 80%;
+  width: 40%;
+}
+header .header-container .logo h3 {
+  font-size: 30px;
+}
+header .header-container .logo img:hover, header .header-container .logo h3:hover {
+  cursor: pointer;
+}
+header .header-container .navbar {
+  width: 50%;
+  display: flex;
+  justify-content: left;
+}
+header .header-container .navbar nav {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-container .navbar nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+header .header-container .navbar nav ul li {
+  display: inline;
+}
+header .header-container .navbar nav ul li form {
+  display: inline;
+}
+header .header-container .navbar nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+header .header-container .navbar nav ul li a form select {
+  font-weight: bold;
+  width: 80px;
+  text-align: center;
+  border: none;
+}
+header .header-container .navbar nav ul li a:hover, header .header-container .navbar nav ul li select:hover {
+  color: aqua;
+  cursor: pointer;
+}
+header .header-container .icons-and-phone {
+  width: 35%;
+  display: flex;
+}
+header .header-container .icons-and-phone .phone, header .header-container .icons-and-phone .logos, header .header-container .icons-and-phone .search-button {
+  height: 100%;
+}
+header .header-container .icons-and-phone .phone {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .header-container .icons-and-phone .phone span i {
+  color: red;
+}
+header .header-container .icons-and-phone .icons {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .header-container .icons-and-phone .icons span i {
+  color: gray;
+}
+header .header-container .icons-and-phone .icons span i:hover {
+  color: red;
+  cursor: pointer;
+}
+header .header-container .icons-and-phone .search-button {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+header .header-container .icons-and-phone .search-button span {
+  font-size: large;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  height: 250%;
+  width: 100%;
+  border: 1px solid black;
+}
+html body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 95%;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-1 {
+  height: 45%;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.section-1 .countries {
+  height: 85%;
+  width: 100%;
+  border: 1px solid black;
+  background-image: url(https://keystoneacademic-res.cloudinary.com/image/upload/f_auto/q_auto/g_auto/c_fill/w_1280/element/11/110854_shutterstock_1037552143.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-1 .countries h1 {
+  height: 150px;
+  font-size: 130px;
+  font-family: "Dancing Script", cursive;
+}
+.section-1 .countries h4 {
+  height: 60px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.section-1 .countries h4, .section-1 .countries h1 {
+  color: white;
+}
+.section-1 .countries button {
+  height: 8%;
+  background-color: aqua;
+  border-radius: 5px;
+  width: 13%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  transition: all 0.3s;
+}
+.section-1 .countries button:hover {
+  background-color: red;
+}
+.section-1 .choice {
+  height: 15%;
+  width: 100%;
+  background-color: black;
+}
+.section-1 .choice form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section-1 .choice form label, .section-1 .choice form input, .section-1 .choice form select {
+  border: 1px solid black;
+  height: 33%;
+  width: 12%;
+  border-radius: 5px;
+}
+.section-1 .choice form input, .section-1 .choice form select {
+  background-color: black;
+  border: 1px solid white;
+}
+.section-1 .choice form label {
+  display: flex;
+  align-items: center;
+  color: White;
+  font-size: 18px;
+}
+.section-1 .choice form input {
+  color: gray;
+  padding-left: 4px;
+}
+.section-1 .choice form select {
+  color: white;
+}
+.section-1 .choice form select + input {
+  background-color: red;
+  transition: all 0.3s;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+}
+.section-1 .choice form select + input:hover {
+  background-color: aqua;
+}
+
+.section-2 {
+  height: 55%;
+  width: 100%;
+}
+.section-2 .popular-places {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-2 .popular-places .text-container, .section-2 .popular-places .places-wrapper {
+  width: 85%;
+}
+.section-2 .popular-places .text-container {
+  height: 16%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-2 .popular-places .text-container h4 {
+  font-size: 40px;
+  color: black;
+}
+.section-2 .popular-places .text-container h5 {
+  font-size: 16px;
+  color: gray;
+  width: 40%;
+  text-align: center;
+}
+.section-2 .popular-places .places-wrapper {
+  height: 76%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 3%;
+}
+.section-2 .popular-places .places-wrapper .country-1, .section-2 .popular-places .places-wrapper .country-2, .section-2 .popular-places .places-wrapper .country-3, .section-2 .popular-places .places-wrapper .country-4, .section-2 .popular-places .places-wrapper .country-5, .section-2 .popular-places .places-wrapper .country-6 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+.section-2 .popular-places .places-wrapper .country-1 div, .section-2 .popular-places .places-wrapper .country-2 div, .section-2 .popular-places .places-wrapper .country-3 div, .section-2 .popular-places .places-wrapper .country-4 div, .section-2 .popular-places .places-wrapper .country-5 div, .section-2 .popular-places .places-wrapper .country-6 div {
+  height: 20%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section-2 .popular-places .places-wrapper .country-1 div h5, .section-2 .popular-places .places-wrapper .country-2 div h5, .section-2 .popular-places .places-wrapper .country-3 div h5, .section-2 .popular-places .places-wrapper .country-4 div h5, .section-2 .popular-places .places-wrapper .country-5 div h5, .section-2 .popular-places .places-wrapper .country-6 div h5 {
+  font-size: 1.5em;
+  color: white;
+}
+.section-2 .popular-places .places-wrapper .country-1 div div, .section-2 .popular-places .places-wrapper .country-2 div div, .section-2 .popular-places .places-wrapper .country-3 div div, .section-2 .popular-places .places-wrapper .country-4 div div, .section-2 .popular-places .places-wrapper .country-5 div div, .section-2 .popular-places .places-wrapper .country-6 div div {
+  background-color: aqua;
+  width: 30%;
+  height: 30%;
+  border-radius: 5px;
+}
+.section-2 .popular-places .places-wrapper .country-1 div div span, .section-2 .popular-places .places-wrapper .country-2 div div span, .section-2 .popular-places .places-wrapper .country-3 div div span, .section-2 .popular-places .places-wrapper .country-4 div div span, .section-2 .popular-places .places-wrapper .country-5 div div span, .section-2 .popular-places .places-wrapper .country-6 div div span {
+  color: white;
+  font-size: 10px;
+}
+.section-2 .popular-places .places-wrapper .country-1 {
+  background-image: url(https://www.lorealparisusa.com/-/media/project/loreal/brand-sites/oap/americas/us/beauty-magazine/articles-2/italian-girl-beauty-guide/loreal-paris-bmag-article-the-italian-girls-guide-to-beauty-d.jpg);
+}
+.section-2 .popular-places .places-wrapper .country-2 {
+  background-image: url(https://i0.wp.com/bestsellingcarsblog.com/wp-content/uploads/2022/05/Fiat-Pulse-Brazil-April-2022.jpg?resize=600%2C400);
+}
+.section-2 .popular-places .places-wrapper .country-3 {
+  background-image: url(https://i.insider.com/54b98efb69beddeb06d23c97?width=1003&format=jpeg);
+}
+.section-2 .popular-places .places-wrapper .country-4 {
+  background-image: url(https://uptohimalaya.com/wp-content/uploads/2018/12/Hot-Air-Ballooning-In-Nepal-At-Pokhara-1290x540.jpg);
+}
+.section-2 .popular-places .places-wrapper .country-5 {
+  background-image: url(https://afar.brightspotcdn.com/dims4/default/dd4ced2/2147483647/strip/true/crop/3000x1592+0+323/resize/1440x764!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2Fb2%2Ff4%2F9a1ebe3f427f8e5eb937f8df8998%2Ftravelguides-maldives-videomediastudioeurope-shutterstock.jpg);
+}
+.section-2 .popular-places .places-wrapper .country-6 {
+  background-image: url(https://d2bgjx2gb489de.cloudfront.net/gbb-blogs/wp-content/uploads/2022/10/24080550/pura-ulun-danu-bratan-temple-in-Bali-indonesia.-1-870x400.jpg);
+}
+.section-2 .popular-places .places-wrapper div {
+  transition: all 0.3s;
+}
+.section-2 .popular-places .places-wrapper div:hover {
+  transform: translate(0%, -10%);
+}
+.section-2 .popular-places .places-wrapper div:hover h5 {
+  color: red;
+}
+.section-2 .popular-places .places-wrapper div:hover span {
+  color: red;
+}
+.section-2 .popular-places .places-wrapper div:hover h5 + div {
+  background-color: red;
+}
+.section-2 .subscribe {
+  width: 100%;
+  height: 15%;
+  background-color: #404b5f;
+  display: flex;
+  justify-content: center;
+}
+.section-2 .subscribe div {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-2 .subscribe div h2 {
+  color: white;
+  font-size: 35px;
+}
+.section-2 .subscribe div h5 {
+  color: gray;
+  margin-top: 8px;
+}
+.section-2 .subscribe form {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-2 .subscribe form div {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.section-2 .subscribe form div .enter-input {
+  height: 40%;
+  width: 60%;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+.section-2 .subscribe form div .send-input {
+  height: 40%;
+  width: 28%;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  transition: all;
+}
+.section-2 .subscribe form div .send-input:hover {
+  background-color: aqua;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,119 @@
+header{
+    width: 100%;
+    height: 5%;
+   
+    .header-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       .logo,.navbar,.icons-and-phone{
+        height: 100%;
+         
+       }
+       .logo{
+        width: 15%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            height: 80%;
+            width: 40%;
+        }
+        h3{
+            font-size: 30px;
+        }
+        img:hover,h3:hover{
+            cursor: pointer;
+        }
+       }
+       .navbar{
+        width: 50%;
+        display: flex;
+        justify-content: left;
+        nav{
+            height: 100%;
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul{
+                list-style-type: none;
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                li{
+                    display: inline;
+                    form{
+                        display: inline;
+                    }
+                    a{
+                        text-decoration: none;
+                        color:$black;
+                        font-weight: bold;
+                        form{
+                            select{
+                            font-weight: bold;
+                            width:80px;
+                            text-align: center;
+                            border:none;
+                        }}
+
+                    }
+                    a:hover,select:hover{
+                        color:$aqua;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+       }
+       .icons-and-phone{
+        width: 35%;
+        display: flex;
+        .phone,.logos,.search-button{
+   height: 100%;
+
+        }
+        .phone{
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            span{
+                i{
+                    color:$red;
+                }
+            }
+        }
+        .icons{
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            span{
+                i{
+                    color:$gray;
+                }
+                i:hover{
+                    color:$red;
+                    cursor: pointer;
+                }
+            }
+
+        }
+        .search-button{
+            width:20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $red;
+            span{
+                font-size: large;
+            }
+        }
+       }
+    }
+
+}
