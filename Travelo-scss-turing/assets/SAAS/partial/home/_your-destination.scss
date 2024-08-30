@@ -152,7 +152,7 @@ flex-direction: row;
  border-radius: 10px;
     background-color: $red;
     color:$white;
-    transition: all;
+    transition: all 0.3s;
 }
 .send-input:hover{
     background-color: $aqua;
