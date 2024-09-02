@@ -1,0 +1,60 @@
+#recent-trips{
+    .container{
+        .row{
+            .trips-header{
+                h2{
+                    padding-top: 200px;
+                    text-align: center;
+                    padding-bottom: 100px;
+                }
+            }
+            .trips-info{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                >div{
+                    width: 340px;
+                    
+                 &:hover{
+                    h3{
+                        color:$red;
+                    }
+                 }
+                    div[class*='photo']
+                    {
+                     height: 260px;
+                     border-radius: 20px;
+                     background-size: cover;
+                     background-repeat: no-repeat;
+                    }
+                    div[class*='info']
+                {
+                    height:160px ;
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        display: inline-block;
+                        padding: 15px;
+                        color:$gray;
+                    }
+                    h3{
+                        padding-left: 15px;
+                        padding-top: 30px;
+                        font-weight:5px;
+                        transition: all 0.7s;
+                    }
+                }
+                }
+                .forest-photo{
+                    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXX1y5BFVZ6PUpJbeXzRSTu2Dc-OZO1BOwlA&s);
+                }
+                .mountain-photo{
+                    background-image: url(https://images.snapwi.re/0aeb/5e2b312524b7d056308b4251.w800.jpg);
+                }
+                .bike-photo{
+                    background-image: url(https://img.freepik.com/premium-photo/active-young-boy-white-t-shirt-doing-tricks-jumping-lifting-front-wheel-up-while-riding-his-bike_290431-16949.jpg);
+                }
+            }
+        }
+    }
+}

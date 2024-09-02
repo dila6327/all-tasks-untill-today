@@ -1,0 +1,145 @@
+footer{
+background-color: #040E27;
+.container{
+    .holder
+    {
+.general-info{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid $white;
+    padding-bottom: 20px;
+    
+    >div{
+        padding-top: 100px;
+        h3{
+            color:$white;
+        }
+    }
+    .address{
+        .travelo-logo{
+            display: flex;
+            align-items: center;
+     
+          
+            img{
+                height: 60px;
+                width: 60px;
+            }
+        }
+        ul{
+            list-style-type: none;
+            li{
+                padding-top: 15px;
+                a{
+                    text-decoration: none;
+                    color:$gray;
+                    transition: all 0.5s;
+                    &:hover{
+                        color:$red;
+                    }
+                }
+            }
+        }
+        .social-icons{
+        display: flex;
+        padding-top: 50px;
+        justify-content: space-around;
+        }
+    }
+    .company{
+        h3{
+            padding-top: 12px;
+        }
+        ul{
+            list-style: none;
+            li{
+                padding-top: 24px;
+                a{
+                    text-decoration: none;
+                    color:$gray;
+                    transition: all 0.5s;
+                    &:hover{
+                        color:$red;
+                    }
+                }
+            }
+        }
+    }
+    .popular-destination{
+        .all-countries{
+            display: flex;
+            gap:20px;
+            ul{
+                list-style-type: none;
+                li{
+                    padding-top: 24px;
+                    a{
+                        color:$gray;
+                        text-decoration: none;
+                        transition: all 0.5s;
+                        &:hover{
+                            color:$red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .instagram
+    {
+        .all-views{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            gap:10px;
+            padding-top: 40px;
+            >div{
+                height: 80px;
+                width:80px;
+                border:1px solid black;
+                border-radius: 10px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .mountain{
+                background-image: url(https://thumbs.dreamstime.com/z/vector-cartoon-illustration-mountains-sea-hand-drawn-landscape-design-game-websites-mobile-phones-printing-117489325.jpg);
+            }
+            .sea{
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCMY3ML7kRmcQg7jgoN4DiVy18E9Xrx3D-Dg&s);
+            }
+            .girl{
+              
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQRJRM7MZraBR9gV7Da11hY7dljpN4_l1bow&s);
+            }
+            .iceland{
+                
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbrrJCDHDPeTOooKVypJ7lqJEEgSgMwJKIYw&s);
+            }
+            .tree{
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo_Kg8c6IMPa_aHJTtqXpQkRynVNIJPXiWOw&s);
+            }
+            .street{
+                background-image:url(https://www.shutterstock.com/image-photo/seattle-washington-usa-march-31-600nw-2284495465.jpg);
+            }
+        }
+    }
+}
+.rights{
+    display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  p{
+    color:$gray;
+    span{
+        color:$red;
+    }
+  }
+}
+    }}
+}
+@media (max-width:1000px)
+{
+.general-info{
+flex-wrap:wrap ;}
+}

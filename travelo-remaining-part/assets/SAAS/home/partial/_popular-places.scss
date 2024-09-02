@@ -1,0 +1,166 @@
+main{
+    #p-places{
+        .container{
+            .title-of-places{
+                display: flex;
+                flex-direction: column;
+               align-items: center;
+               padding: 20px;
+               gap:10px;
+                h2{
+                    text-align: center;
+                    font-weight: lighter;
+                    font-size: 40px;
+                }
+                h5{
+                    text-align: center;
+                    width: 50%;
+                    color:$gray;
+                }
+            }
+         .popular-places{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            >div{
+                width: 340px;
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                border-radius: 8px;
+                justify-content: center;
+             &:hover{
+                div[class*='bg-image']
+                {
+                    p{
+                        background-color: $red;
+                    }
+                }
+                div[class*='img-info']
+                {
+                    .info-primary-part{
+                    h3{
+                        color:$red;
+                    }
+                }}
+             }
+        div[class*='bg-image']{
+            height:220px;
+            background-size:cover;
+            background-repeat: no-repeat;
+            padding: 30px;
+          
+            p{
+                width:25%;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                height: 30px;
+                justify-content: center;
+                color:$white;
+                background-color: $aqua;
+                transition: all 0.5s;
+            }
+        }
+        div[class*='img-info']{
+            height: 160px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            .info-primary-part{
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+            justify-content: center;
+         
+            h3{
+                color:$black;
+                transition: all 0.5s;
+            }
+            h5{
+                color:$gray;
+            }
+       
+            }
+            .info-secondary-part{
+                flex: 1;
+                display: flex;
+                justify-content: space-between;
+                .review{
+                    display: flex;
+                 flex: 5;
+                 justify-content: space-evenly;
+                    .star-count{
+                   display: flex;
+                   justify-content: space-around;
+                    i{
+                        color:yellow;
+                        font-size: 15px;
+          
+                    }
+                   
+                    }
+                }
+                .day-count{
+flex: 4;
+display: flex;
+justify-content: right;
+                }
+            }
+        }
+           
+            }
+            .california-1{
+                    .bg-image-california-1{
+                    background-image: url(https://media.timeout.com/images/105236338/750/562/image.jpg);
+                }
+                }
+                .megna{
+                    .bg-image-megna{
+                        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlkSe8XbBfj6PEY2wGHdgcYCeKDgLYBy9pUw&s);
+                    }
+                }
+                .london{
+                    .bg-image-london{
+                        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXoa5DwJBgnH3-_IDL_ys4leTF8014ZotzGw&s);
+                    }
+                }
+                .miami{
+                    .bg-image-miami{
+                        background-image: url(https://a.eu.mktgcdn.com/f/100004519/AGs-7NCvKQVFaEBlWyQ7SptVv7O9t-WcxGWdtu0uwM8.jpg);
+                    }
+                }
+                .california-2{
+                    .bg-image-california-2{
+                        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5tOxBZjPJfEs6CjV3piSlSGc1TOY1CuzGIQ&s);
+                    }
+                }
+                .iceland{
+                    .bg-image-iceland{
+                        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2cHiZVoorjyS99kOHMGa4XKS8zCh7-J2B0g&s);
+                    }
+                }
+         }
+       .button-holder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px;
+        button{
+            padding: 16px;
+            width:160px;
+            border-radius: 5px;
+            background-color: $red;
+            color:$white;
+            font-size: 15px;
+            font-weight: bold;
+            transition: all 0.3s;
+            &:hover{
+                background-color: $aqua;
+            }
+        }
+       }
+        }
+    }
+}

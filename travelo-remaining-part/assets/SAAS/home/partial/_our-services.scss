@@ -1,0 +1,43 @@
+#our-services{
+.container{
+    .row{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        >div{
+       width: 340px;
+   
+      
+      div[class*='icon']
+      {
+        font-size: 100px;
+        display: flex;
+        justify-content: center;
+        padding-top: 120px;
+        padding-bottom: 30px;
+        span{
+            i{
+                color:$red;
+            }
+        }
+      }
+      div[class*='info']
+      {
+        h3,h5{
+        
+            text-align: center;
+            font-weight: lighter;
+        }
+        h3{
+            font-size: 30px;
+            padding-bottom: 5px;
+        }
+        h5{
+            font-size: 15px;
+            color:$gray;
+            padding-bottom: 100px;
+        }
+      }
+    }}
+}
+}
