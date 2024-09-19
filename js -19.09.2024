@@ -1,0 +1,124 @@
+1)Saitləri Say: Bir string götürün və string-də olan saitlərin (a, e, i, o, u) sayını qaytaran funksiya yazın.
+
+const arr = ['a', 'e', 'i', 'o', 'u'];
+const MyString = "Dila khanum thank youu!";
+console.log(MyString);
+let Count = 0;
+for (let i = 0; i < MyString.length; i++) {
+    if (arr.includes(MyString[i].toLowerCase())) {
+        Count++;
+    }
+}
+console.log(Count);
+
+
+2)
+ Bir string götürün və onu tərsinə çevirən funksiya yazın.
+
+function ReverseString(str) {
+  console.log(str.split('').reverse().join(''));
+}
+const MyStr = "Hello it is me!";
+ReverseString(MyStr);
+
+3) Verilmiş string-in palindrom olub-olmadığını (ön tərəfdən və tərsinə oxuduqda eyni olub-olmadığını) yoxlayan funksiya yazın.
+
+const str = "ana";
+const reversed = str.split('').reverse().join(''); 
+if (reversed === str) {
+    console.log("The string is a palindrom");
+} else {
+    console.log("The string is not a palindrom");
+}
+
+4)String-dəki hər sözün ilk hərfini böyük yazan funksiya yazın.
+
+function capitalizeWords(str) {
+  return str.toLowerCase().split(' ').map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+}
+console.log(capitalizeWords('Dila khanum welcome'));
+
+
+5)
+String-də təkrarlanan simvolları silən funksiya yazın. Məsələn, "salam" stringi "salm" olmalıdır.(wrong)
+
+function DeleteOneMore(str) {
+    for (let i = 0; i < str.length; i++) {
+        if (str.slice(i + 1).includes(str[i])) {
+ 
+            return str.slice(0, i) + str.slice(i + 1);
+        }
+    }
+    return str;
+}
+
+const MyString = "azerbaycan";
+console.log(DeleteOneMore(MyString));  
+
+6)
+
+Bir cümlə və bir söz götürən və həmin sözün cümlədə neçə dəfə təkrarlanmasını qaytaran funksiya yazın.
+
+function sentence(sent,word)
+{
+    let Count=0;
+    const other=sent.split(" ");
+    for(let i=0;i<sent.length;i++)
+    {
+
+     if(other[i]==word)
+     {
+         Count++;
+     }
+    }
+    return Count;
+}
+const MySentence="You are stronger than you think! Believe me you can do it";
+console.log(sentence(MySentence.toLowerCase(),'you'));
+
+7)
+ Bir string və iki simvol götürən, string-də birinci simvolu ikinci simvolla əvəzləyən funksiya yazın.
+
+function ReplaceStr(str, symbol1, symbol2) {
+    return str.replaceAll(symbol1, symbol2); 
+}
+
+console.log(ReplaceStr("mellim", 'm', 'l'));  
+
+8)
+String-dəki ən uzun sözü tapan funksiya yazın.
+function longest(str) {
+    const words = str.split(" ");  
+    let longestWord = "";
+
+    for (let i = 0; i < words.length; i++) {
+        if (words[i].length > longestWord.length) {
+            longestWord = words[i];  
+        }
+    }
+
+    return longestWord; 
+}
+
+console.log(longest("How are you MS.Smith")); 
+
+9)
+Verilmiş string-dən bütün rəqəmləri çıxaran funksiya yazın.
+
+const arr=[1,2,3,4,5,6,7,8,9,0];
+const stringg="1,2,3   5 reqemlerdir";
+
+function numstr(str,array)
+{
+    let NumberString=[];
+for(let i=0;i<stringg.length;i++)
+{
+    if(stringg.includes(arr[i]))
+    {
+        NumberString.push(arr[i]);
+    }
+}
+return  NumberString;
+    
+}
+console.log(numstr(stringg,arr));
