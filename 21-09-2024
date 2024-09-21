@@ -109,4 +109,20 @@ console.log("Updated Array : ",arr);
 
 9)
  Birinci arqument olaraq vurğu qəbul edən və istənilən sayda əlavə arqument qəbul edən multiplyBy funksiyasını yazın. Spread və rest operatorları istifadə edərək, hər bir arqumenti (vurğudan sonra) vurğu ilə vurub array qaytarın.
- Birinci arqument olaraq vurğu qəbul edən və istənilən sayda əlavə arqument qəbul edən multiplyBy funksiyasını yazın. Spread və rest operatorları istifadə edərək, hər bir arqumenti (vurğudan sonra) vurğu ilə vurub array qaytarın.
+    function MultiplBy(a)
+    {
+        const PushElement=[];
+        for(let i=0;i<a;i++)
+        {
+            const newElement=parseInt(prompt("Enter any element to an array :"));
+            PushElement.push(newElement);
+        }
+        let [first,...rest]=PushElement;
+  for(let j=0;j<rest.length;j++)
+  {
+      rest[j]=rest[j]*first;
+  }
+         const Modified=[rest];
+         return Modified.flat();
+    }
+console.log(MultiplBy(4));
