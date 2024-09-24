@@ -1,0 +1,124 @@
+// Create a Library object:
+// The object should have a property books that holds an array of book objects.
+// Define methods on the Library object:
+// addBook(book): Adds a new book object to the books array.
+// checkAvailability(title): Checks if a book with the given title is available.
+// borrowBook(title): Changes the isAvailable status of the book to false if the book is available.
+// returnBook(title): Changes the isAvailable status of the book to true.
+// listAvailableBooks(): Lists all books with isAvailable set to true.
+
+class Library{
+    books=[];
+    addBook(book)
+    {
+        this.books.push(book);
+    }
+    checkAvailability(title)
+    {
+    
+        const lowerTitle = title.toLowerCase();
+        const isAvailable = this.books.some(book => book.title.toLowerCase()==lowerTitle);
+
+        if(isAvailable)
+        {
+            console.log("The book is available😍");
+            
+    }
+        
+        else
+        {
+            console.log("The book is not available😐");
+        }
+    }
+    
+   
+   
+   
+   
+   borrowBook(title) {
+    const lowerTitle = title.toLowerCase();
+    const bookToBorrow = this.books.find(book => book.title.toLowerCase() === lowerTitle && book.isAvailable);
+
+    if (bookToBorrow) {
+        bookToBorrow.isAvailable = false;
+        console.log(`You have borrowed "${bookToBorrow.title}".`);
+    } else {
+        console.log("Sorry, the book is either not available or doesn't exist.");
+    }
+}
+
+returnBook(title)
+{
+      const lowerTitle = title.toLowerCase();
+    const checkAvailability=this.books.find(book => book.title.toLowerCase() === lowerTitle && !book.isAvailable);
+if (checkAvailability) {
+       checkAvailability.isAvailable = true;
+        console.log(`You retrieved "${checkAvailability.title}".`);
+    } else {
+        console.log("You did not borrow this book from us   ");
+    }
+
+}
+
+listAvailableBooks()
+{
+    
+        console.log("List of available books in our library : 📚");
+const avail=this.books.filter(book=>book.isAvailable).map(book=>book.title);
+console.log(avail);
+
+   
+}}
+
+const library=new Library;
+library.addBook({title:"Little Prince",isAvailable:true});
+library.addBook({title:"Emma",isAvailable:true});
+library.addBook({title:"Dracula",isAvailable:true});
+library.addBook({title:"Pride and Prejudice",isAvailable:true});
+library.addBook({title:"Anna Karenina",isAvailable:true});
+library.addBook({title:"Şizofren",isAvailable:true});
+library.addBook({title:"The woman in white",isAvailable:true});
+library.addBook({title:"Oliver",isAvailable:true});
+library.addBook({title:"Hachiko",isAvailable:true});
+library.addBook({title:"Köle",isAvailable:true});
+library.addBook({title:"Twilight",isAvailable:true});
+library.addBook({title:"Chess",isAvailable:true});
+
+console.log("Welcome to our library !😇"+"  "+"Which kindda action do you wanna take?If you wanna check for the availability of spesific book please write checking ,if you wanna borrow any book please write borrow ,if you'v borrowed any book and now want to retrieve it please write return "+"  "+"Here is the collection of available books in our library👍 : ");
+library.listAvailableBooks();
+const choice=prompt("Enter your choice : ");
+if(choice=="checking" || choice=="CHECKING")
+{
+ const count1=prompt("How many books will you search? : ");
+ for(let j=0;j<count1;j++)
+ {
+    const checking=prompt("Enter the book title and i will tell yo if it exist in our library☺ : ");
+library.checkAvailability(checking); 
+ }
+}
+
+if(choice=="borrow"|| choice=="BORROW")
+{
+ const count2=prompt("How many books do you wanna borrow? : ");
+ for(let i=0;i<count2;i++)
+ {
+   const borrowing=prompt("Enter the title of the book you wanna borrow! : ");
+library. borrowBook(borrowing);
+ }
+}
+
+if(choice=="return" || choice=="RETURN")
+{
+ const count3=prompt("How many books will you retuurn? : ");
+ for(let k=0;k<count3;k++)
+ {
+   
+const returning=prompt("Enter the title of the book you wanna return! : ");
+library.returnBook(returning);
+ }
+}
+library.listAvailableBooks();
+
+
+
+
