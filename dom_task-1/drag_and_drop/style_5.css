@@ -1,0 +1,45 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+ }
+body>div{
+    width: 100%;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+
+}
+.container>p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.drop-drag
+{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gold;
+}
+.droppable{
+    height: 300px;
+    width: 50%;
+    background-color: greenyellow;
+}
+.drag-wrapper{
+height: 250px;
+width: 30%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+font-weight: bold;
+align-items: center;
+}
+.draggable
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    height: 15%;
+    width: 90%;
+} 

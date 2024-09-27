@@ -1,0 +1,10 @@
+.bg-color{
+    height: 300px;
+    width: 300px;
+    background-color: mediumpurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    color: bisque;
+}
