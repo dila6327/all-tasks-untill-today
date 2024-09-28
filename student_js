@@ -1,0 +1,49 @@
+// : Student adlı bir konstruktor funksiyası yaradın ki, bu funksiya tələbə obyektləri yarada bilsin və aşağıdakı xüsusiyyətlərə malik olsun:
+// name: Tələbənin adı.
+// grade: Tələbənin ilkin qiyməti (əgər göstərilməyibsə, 0 olaraq təyin edilsin).
+// subject: Tələbənin oxuduğu fənn.
+// :
+// Student funksiyası yeni tələbə obyektləri yaratmağa imkan vermək üçün new açar sözündən istifadə etməlidir.
+// Hər bir tələbə aşağıdakı metodlara malik olmalıdır:
+// study(hours): Tələbə neçə saat çalışdığına əsasən qiymətinə bal əlavə edir (1 saat = 5 bal).
+// getGrade(): Tələbənin cari qiymətini qaytarır.
+// changeSubject(newSubject): Tələbənin fənnini dəyişməyə imkan verir.
+// :
+// new açar sözündən istifadə edərək yeni tələbə yaradın və metodlardan istifadə edərək qiyməti yeniləyin, fənni dəyişdirin və cari qiyməti göstərin.
+
+function Students(name,subject,grade=0)
+{
+  this.name=name;
+  this.grade=grade;
+  this.subject=subject;
+
+  this.study=function (hours)
+ {
+    this.grade+=hours*5;
+    if(this.grade>100)
+    {
+        this.grade=100;
+        return this.grade;
+    }
+    return this.grade;
+ }
+  
+this.getGrade=function()
+{
+    return this.grade;
+}
+this.changeSubject=function (newSubject)
+{
+this.subject=newSubject;
+}
+}
+const student_1=new Students('Dilruba','Math',100);
+const student_2=new Students('Melisa','Chemistry',95);
+const student_3=new Students('Leyla','Physics',96);
+const student_4=new Students('Farah','ADIAK',66);
+const student_5=new Students('Zarif','Foreign language');
+const time=parseInt(prompt("How many hours did that student study? "));
+student_1.study(time);
+console.log('modified grade : ',student_1.getGrade());
+student_2.changeSubject('Programming');
+console.log('Modified subject : ',student_2.subject);
