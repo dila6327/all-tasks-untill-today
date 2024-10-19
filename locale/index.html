@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart UI</title>
+    <script src="assets/script.js" defer></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="product-list-section">
+        <h2>Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSeppyr-F0v6Umu5E-c9K2u4NVC-KCmUoBVw&s" alt="Lounge Chair">
+                <h3>LD01  CHAIR</h3>
+                <p>$120</p>
+                <button class="add-to-cart-btn" data-id="1" data-name="LD01  CHAIR" data-price="120" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSeppyr-F0v6Umu5E-c9K2u4NVC-KCmUoBVw&s">Add to Cart</button>
+            </div>
+
+        
+            <div class="product-item">
+                <img src="https://www.hermanmiller.com/content/dam/hmicom/page_assets/products/caper_multipurpose_chair/th_prd_caper_multipurpose_chair_office_chairs_fn.jpg" alt="White Stylish Chair">
+                <h3>LD02  CHAIR</h3>
+                <p>$130</p>
+                <button class="add-to-cart-btn" data-id="2" data-name="LD02  CHAIR" data-price="130" data-image="https://www.hermanmiller.com/content/dam/hmicom/page_assets/products/caper_multipurpose_chair/th_prd_caper_multipurpose_chair_office_chairs_fn.jpg">Add to Cart</button>
+            </div>
+
+          
+            <div class="product-item">
+                <img src="https://cdn.shopify.com/s/files/1/0044/1208/0217/files/CHRTULIP_A_MSYL_900x.jpg?v=1716280820" alt="Vintage Armchair">
+                <h3>LD03  CHAIR</h3>
+                <p>$180</p>
+                <button class="add-to-cart-btn" data-id="3" data-name="LD03  CHAIR" data-price="180" data-image="https://cdn.shopify.com/s/files/1/0044/1208/0217/files/CHRTULIP_A_MSYL_900x.jpg?v=1716280820">Add to Cart</button>
+            </div>
+
+            <div class="product-item">
+                <img src="https://t4.ftcdn.net/jpg/03/21/42/87/360_F_321428779_l8oQrLjoqZM5TIW22IAapbpOg0wgKufw.jpg" alt="Black Minimalist Chair">
+                <h3>LD04  CHAIR</h3>
+                <p>$100</p>
+                <button class="add-to-cart-btn" data-id="4" data-name="LD04  CHAIR" data-price="100" data-image="https://t4.ftcdn.net/jpg/03/21/42/87/360_F_321428779_l8oQrLjoqZM5TIW22IAapbpOg0wgKufw.jpg">Add to Cart</button>
+            </div>
+
+      
+            <div class="product-item">
+                <img src="https://images.eq3.com/image-service/a0067633-232a-4dff-b0b9-bc26c0651211/Joan-Chair-30215-02-Panama-Grey-Black-Ash-Legs-Front-Web_ORIGINAL.jpg" alt="Modern Armchair">
+                <h3>LD05  CHAIR</h3>
+                <p>$150</p>
+                <button class="add-to-cart-btn" data-id="5" data-name="LD05  CHAIR" data-price="150" data-image="https://images.eq3.com/image-service/a0067633-232a-4dff-b0b9-bc26c0651211/Joan-Chair-30215-02-Panama-Grey-Black-Ash-Legs-Front-Web_ORIGINAL.jpg">Add to Cart</button>
+            </div>
+
+        
+            <div class="product-item">
+                <img src="https://supremefurniture.co.in/cdn/shop/files/Ornate-Red-Black.jpg?v=1706170905" alt="Blue Comfort Chair">
+                <h3>LD06  CHAIR</h3>
+                <p>$140</p>
+                <button class="add-to-cart-btn" data-id="6" data-name="LD06  CHAIR" data-price="140" data-image="https://supremefurniture.co.in/cdn/shop/files/Ornate-Red-Black.jpg?v=1706170905">Add to Cart</button>
+            </div>
+
+           
+            <div class="product-item">
+                <img src="https://damroimages.blob.core.windows.net/damroimages/black16-1.jpg" alt="Wooden Armchair">
+                <h3>LD07  CHAIR</h3>
+                <p>$160</p>
+                <button class="add-to-cart-btn" data-id="7" data-name="LD07  CHAIR" data-price="160" data-image="https://damroimages.blob.core.windows.net/damroimages/black16-1.jpg">Add to Cart</button>
+            </div>
+
+       
+            <div class="product-item">
+                <img src="https://www.ebarza.com/cdn/shop/files/lille-lounge-chair-lc005-2101-lounge-chairs-52622897-2173255548977_1600x.jpg?v=1699359234" alt="Modern White Chair">
+                <h3>LD08  CHAIR</h3>
+                <p>$110</p>
+                <button class="add-to-cart-btn" data-id="8" data-name="LD08  CHAIR" data-price="110" data-image="https://www.ebarza.com/cdn/shop/files/lille-lounge-chair-lc005-2101-lounge-chairs-52622897-2173255548977_1600x.jpg?v=1699359234">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-section">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+        </div>
+        <div id="cart-items"></div>
+        <div class="cart-footer">
+            <div>
+                <p id="cart-subtotal">Subtotal: $0.00</p>
+            </div>
+            <div>
+                <button id="close-cart">Close</button>
+                <button id="checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>
