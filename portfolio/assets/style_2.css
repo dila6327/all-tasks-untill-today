@@ -1,0 +1,26 @@
+body {
+    background-color: #0F172A;
+ 
+}
+
+.parent_div,.Projects{
+    display: flex;
+    flex-direction: column;
+
+}
+.parent_div{
+    width: 100%;
+    border: 1px solid black;
+}
+.heading,.pro{
+   display: flex; 
+   border: 1px solid black;
+   justify-content: space-between;
+   >div{
+    border: 1px solid black;
+    width: 20%;
+   }
+}
+.link_to_main a{
+    color:aqua;
+}
